@@ -1,4 +1,5 @@
 'use client'
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { ParticlesEffect } from '@/components/Particles'
 import { ThemeProvider } from 'next-themes'
@@ -21,6 +22,7 @@ export default function RootLayout({
           <ParticlesEffect />
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
