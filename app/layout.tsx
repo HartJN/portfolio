@@ -1,6 +1,7 @@
 'use client'
 import Navbar from '@/components/Navbar'
 import { ParticlesEffect } from '@/components/Particles'
+import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
 
 export default function RootLayout({
@@ -16,10 +17,12 @@ export default function RootLayout({
       */}
       <head />
       <body className="bg-[#0d1117]">
-        <ParticlesEffect />
-        <Navbar />
+        <ThemeProvider enableSystem={true} attribute="class">
+          <ParticlesEffect />
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
-      <body>{children}</body>
     </html>
   )
 }
