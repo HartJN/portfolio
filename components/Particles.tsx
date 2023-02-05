@@ -5,35 +5,19 @@ import { loadFull } from 'tsparticles'
 import HeartParticleImage from 'public/particles-heart.svg'
 
 export function ParticlesEffect() {
-  //if dark mode is enabled, change the color of the particles to #69afff else change to #ff69ff
-
-  const currentTheme = localStorage.getItem('theme')
-  const particlesColor = currentTheme === 'dark' ? '#69afff' : '#ff69ff'
-  console.log('🚀 ~ ParticlesEffect ~ currentTheme', currentTheme)
-
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine)
-
     // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine)
   }, [])
 
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container)
-    },
-    []
-  )
   return (
     <Particles
-      //set z-index to -1 to make particles appear behind the navbar
       style={{ zIndex: -22 }}
       className="particles"
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         smooth: true,
         background: {
