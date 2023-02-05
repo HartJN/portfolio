@@ -11,8 +11,8 @@ import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { NAV_ITEMS } from 'data/data'
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
+  const { theme, setTheme } = useTheme()
+  const currentTheme = theme === 'system' ? 'dark' : theme
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
