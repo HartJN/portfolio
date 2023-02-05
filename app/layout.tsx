@@ -1,4 +1,6 @@
+'use client'
 import Navbar from '@/components/Navbar'
+import { ParticlesEffect } from '@/components/Particles'
 import '../styles/globals.css'
 
 export default function RootLayout({
@@ -14,6 +16,7 @@ export default function RootLayout({
       */}
       <head />
       <body className="bg-[#0d1117]">
+        <ParticlesEffect />
         <Navbar />
       </body>
       <body>{children}</body>
