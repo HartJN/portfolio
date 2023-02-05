@@ -1,0 +1,81 @@
+@import './theme.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: $accent;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+.container {
+  // max-width: 1280px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+
+  // background: $bg;
+}
+
+.App {
+  // background: $bg;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  // height: 100vh;
+  // width: 100vw;
+  // position: relative;
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+}
+
+body {
+  font-size: 16px;
+  font-family: $font;
+  color: $text-sub;
+  background: $bg;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  tab-size: 4;
+  font-weight: $weight-normal;
+}
+
+h2,
+h3 {
+  font-weight: $weight-medium;
+}
+
+p {
+  color: $text-sub;
+}
+
+a,
+p {
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-bottom: 2px dashed $text-sub;
+}
+
+.particles {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
