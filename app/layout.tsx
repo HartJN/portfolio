@@ -16,7 +16,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-[#0d1117]">
+      <body className="dark:bg-[#0d1117]">
         <ThemeProvider enableSystem={true} attribute="class">
           <ParticlesEffect />
           <Navbar />
