@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         primaryAccent: '#69afff',
         secondaryAccent: '#4f95e6',
+        background: '#0d1117',
       },
       screens: { sm: '480px', md: '768px', lg: '976px', xl: '1440pd' },
       animation: {

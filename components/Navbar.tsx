@@ -5,27 +5,10 @@ import { Link } from 'react-scroll/modules'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { RiMoonFill, RiSunLine } from 'react-icons/ri'
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
-
-interface NavItem {
-  label: string
-  page: string
-}
-
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: 'Home',
-    page: 'home',
-  },
-  {
-    label: 'About',
-    page: 'about',
-  },
-  {
-    label: 'Projects',
-    page: 'projects',
-  },
-]
+import { NAV_ITEMS } from 'data/data'
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme()
@@ -33,7 +16,7 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-[#0d1117] dark:text-primaryAccent dark:border-b dark:border-primaryAccent">
+    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-background dark:text-primaryAccent dark:border-b dark:border-primaryAccent">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -89,14 +72,14 @@ export default function Navbar() {
                   onClick={() => setTheme('light')}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black" />
+                  <DarkModeOutlinedIcon />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme('dark')}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <LightModeOutlinedIcon />
                 </button>
               )}
             </div>

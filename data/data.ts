@@ -6,6 +6,11 @@ interface Project {
   link: string
 }
 
+interface NavItem {
+  label: string
+  page: string
+}
+
 export const PROJECTS: Project[] = [
   {
     name: 'Secret Santa',
@@ -46,5 +51,20 @@ export const PROJECTS: Project[] = [
     image: '/mapty.png',
     github: 'https://github.com/HartJN/Mapty',
     link: '#',
+  },
+]
+
+export const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: 'Home',
+    page: 'home',
+  },
+  {
+    label: 'About',
+    page: 'about',
+  },
+  {
+    label: 'Projects',
+    page: 'projects',
   },
 ]
