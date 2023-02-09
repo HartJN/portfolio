@@ -18,7 +18,7 @@ export default function RootLayout({
       */}
       <head />
       <body className="dark:bg-background">
-        <ThemeProvider enableSystem={false} attribute="class">
+        <ThemeProvider enableSystem={true} attribute="class">
           <ParticlesEffect />
           <Navbar />
           {children}
