@@ -33,8 +33,8 @@ export const PROJECTS: Project[] = [
     description:
       'TechTok is a social media application that allows users to post and comment on tech-related content. Built using Typescript, Next.js, Sanity.io.',
     image: '/tech-tok.png',
-    github: '#',
-    link: '#',
+    github: 'https://github.com/HartJN/techtok',
+    link: 'https://techtok.vercel.app',
   },
   {
     name: 'Forkify',
