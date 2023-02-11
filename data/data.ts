@@ -21,6 +21,14 @@ export const PROJECTS: Project[] = [
     link: 'https://elfco-secret-santa.herokuapp.com',
   },
   {
+    name: 'TechTok',
+    description:
+      'TechTok is a social media application that allows users to post and comment on tech-related content. Built using Typescript, Next.js, Sanity.io.',
+    image: '/tech-tok.png',
+    github: 'https://github.com/HartJN/techtok',
+    link: 'https://techtok.vercel.app',
+  },
+  {
     name: 'Badger Match',
     description:
       "An animal companion finding application. We'll show you different candidates to help you decide which animal is your ideal match.",
@@ -29,13 +37,14 @@ export const PROJECTS: Project[] = [
     link: '#',
   },
   {
-    name: 'TechTok',
+    name: 'Personal Blog',
     description:
-      'TechTok is a social media application that allows users to post and comment on tech-related content. Built using Typescript, Next.js, Sanity.io.',
-    image: '/tech-tok.png',
-    github: 'https://github.com/HartJN/techtok',
-    link: 'https://techtok.vercel.app',
+      'A static blog created during my time at Dev Academy. Features articles on core human skills and reflections. Showcases my HTML, CSS, and JavaScript skills, as well as my view on topics such as growth mindset.',
+    image: '/blog.png',
+    github: 'https://github.com/HartJN/HartJN.github.io',
+    link: 'https://hartjn.github.io',
   },
+
   {
     name: 'Forkify',
     description:
