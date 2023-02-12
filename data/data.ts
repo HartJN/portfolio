@@ -29,6 +29,14 @@ export const PROJECTS: Project[] = [
     link: 'https://techtok.vercel.app',
   },
   {
+    name: 'Hart Solutions',
+    description:
+      'Hart Solutions is a website that provides software solutions for businesses. It is built using React, Typescript and TailwindCSS to create a modern, responsive interface.',
+    image: '/hart-solutions.png',
+    github: 'https://github.com/HartJN/Hart-Solutions',
+    link: 'https://hart-solutions.vercel.app/',
+  },
+  {
     name: 'Badger Match',
     description:
       "An animal companion finding application. We'll show you different candidates to help you decide which animal is your ideal match.",
