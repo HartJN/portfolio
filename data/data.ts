@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
       'Forkify is a recipe search application that allows users to search for recipes and save them to their favorites. Built using OOP JavaScript and MVC architecture.',
     image: '/forkify.png',
     github: 'https://github.com/HartJN/Forkify',
-    link: '#',
+    link: 'https://forkify-hartjn.netlify.app/',
   },
   {
     name: 'Mapty',
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
       'Mapty is a workout tracking application that allows users to track their workouts and save them to their favorites. Built using OOP JavaScript and MVC architecture.',
     image: '/mapty.png',
     github: 'https://github.com/HartJN/Mapty',
-    link: '#',
+    link: 'https://mapty-hartjn.netlify.app',
   },
 ]
 
