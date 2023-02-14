@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     description:
       "An animal companion finding application. We'll show you different candidates to help you decide which animal is your ideal match.",
     image: '/badgermatch.png',
-    github: 'https://github.com/HartJN/BadgerMatch',
+    github: 'https://github.com/HartJN/Badger-Match',
     link: '#',
   },
   {
